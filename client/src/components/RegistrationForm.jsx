@@ -107,6 +107,40 @@ const RegistrationPage = () => {
             Sign Up
           </button>
         </form>
+         {/* Divider */}
+        <div className="my-6 flex items-center justify-center">
+          <span className="flex-grow border-t border-gray-300"></span>
+          <span className="text-sm text-gray-500 px-2">OR</span>
+          <span className="flex-grow border-t border-gray-300"></span>
+        </div>
+
+        {/* Social Logins */}
+        <div className="flex justify-between space-x-4">
+          <button className="flex items-center justify-center w-1/3 px-4 py-3 border rounded-lg hover:bg-gray-100 transition duration-300 shadow-md">
+            <img
+              src={google}
+              alt="Google"
+              className="h-6 w-6 mr-2"
+            />
+            Google
+          </button>
+          <button className="flex items-center justify-center w-1/3 px-4 py-3 border rounded-lg hover:bg-gray-100 transition duration-300 shadow-md">
+            <img
+              src={facebook}
+              alt="Facebook"
+              className="h-6 w-6 mr-2"
+            />
+            Facebook
+          </button>
+          <button className="flex items-center justify-center w-1/3 px-4 py-3 border rounded-lg hover:bg-gray-100 transition duration-300 shadow-md">
+            <img
+              src={apple}
+              alt="Apple"
+              className="h-6 w-6 mr-2"
+            />
+            Apple
+          </button>
+        </div>
         <p className="mt-6 text-center text-gray-800">
           Already have an account?{" "}
           <a href="/login" className="text-blue-400 font-bold hover:text-blue-700">
